@@ -35,15 +35,15 @@ var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a target="_blank" href="%url%">%data%';
-var HTMLschoolDegree = ' -- %data%</a>';
+var HTMLschoolName = '<a target="_blank" href="%url%">%data%</a>';
+var HTMLschoolDegree = ' -- %data%';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
 
 var HTMLonlineClasses = '<h3>Online Classes</h3>';
-var HTMLonlineTitle = '<a target="_blank" href="%url%">%data%';
-var HTMLonlineSchool = ' -- %data%</a>';
+var HTMLonlineTitle = '<a target="_blank" href="%url%">%data%</a>';
+var HTMLonlineSchool = ' -- %data%';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
 var HTMLonlineURL = '<br><a href="%url%">%data%</a>';
 

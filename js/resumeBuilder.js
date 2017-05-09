@@ -163,7 +163,7 @@ education.display = function() {
         var formattedonlineTitle = HTMLonlineTitle.replace("%data%", onlineCourse.title);
         var formattedonlineSchool = HTMLonlineSchool.replace("%data%", onlineCourse.school);
         var formattedonlineDates = HTMLonlineDates.replace("%data%", onlineCourse.dates);
-        formattedonlineSchool = formattedonlineSchool.replace("%url%", onlineCourse.url);
+        formattedonlineTitle = formattedonlineTitle.replace("%url%", onlineCourse.url);
 
         $("#education").append(HTMLschoolStart);
         $(".education-entry:last").append(formattedonlineTitle, formattedonlineSchool, formattedonlineDates);
