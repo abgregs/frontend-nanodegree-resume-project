@@ -54,7 +54,7 @@ var work = {
             "title": "PR Coordinator",
             "location": "Phoenix, AZ",
             "dates": "December 2011 - March 2013",
-            "description": "Use our iRank research, relationship management, and analytics platform to identify high-quality relevant publishers. Reports key data points (contact attempts/exchanges, stages of prospect interaction, etc.), and manage outreach and ongoing communication with publishers. Evaluates and coordinates strategic web partnership opportunities for clients.",
+            "description": "Consistently achieved difficult performance measures in a competitive, fast-paced start-up environment. Rapidly learned new skills and technologies related to SEO and content marketing and used them to identify, build and manage strategic partnerships with publishers. Used our iRank research, relationship management, and analytics platform to develop relationships with high-quality relevant publishers and identify key data points.",
             "url": "https://www.iacquire.com"
         }
     ]
