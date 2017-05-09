@@ -1,33 +1,25 @@
 /*
-
-This file contains all of the code running in the background that makes resumeBuilder.js possible. We call these helper functions because they support your code in this course.
-
-Don't worry, you'll learn what's going on in this file throughout the course. You won't need to make any changes to it until you start experimenting with inserting a Google Map in Problem Set 3.
-
-Cameron Pittman
+This file contains all of the code running in the background that makes resumeBuilder.js possible
 */
 
+var HTMLheaderName = '<h1 id="name" class="orange-text">%data%</h1><br style="clear: both;">';
+var HTMLheaderRole = '<span id="role">%data%</span><hr>';
 
-/*
-These are HTML strings. As part of the course, you'll be using JavaScript functions
-replace the %data% placeholder text you see in them.
-*/
-var HTMLheaderName = '<h1 id="name">%data%</h1>';
-var HTMLheaderRole = '<span>%data%</span><hr>';
-
-var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span class="white-text">%data%</span></li>';
-var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span class="white-text">%data%</span></li>';
-var HTMLemail = '<li class="flex-item"><span class="orange-text">email</span><span class="white-text">%data%</span></li>';
-var HTMLtwitter = '<li class="flex-item"><span class="orange-text">twitter</span><span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><span class="orange-text">github</span><span class="white-text">%data%</span></li>';
-var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span class="white-text">%data%</span></li>';
-var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span class="white-text">%data%</span></li>';
+var HTMLcontactGeneric = '<li class="flex-item"><span class="orange-text">%contact%</span><span>%data%</span></li>';
+var HTMLmobile = '<li class="flex-item"><span class="orange-text">mobile</span><span>%data%</span></li>';
+var HTMLemail = '<li class="flex-item"><span class="orange-text">email</span><span><a target="_blank" class="anchor-dark" href="mailto:abgregs@gmail.com">%data%</a></span></li>';
+var HTMLinstagram = '<li class="flex-item"><span class="orange-text">instagram</span><span><a target="_blank" class="anchor-dark" href="http://www.instagram.com/austin.gregersen/">%data%</a></span></li>';
+var HTMLgithub = '<li class="flex-item"><span class="orange-text">github</span><span><a target="_blank" class="anchor-dark" href="http://www.github.com/abgregs/">%data%</a></span></li>';
+var HTMLlinkedin = '<li class="flex-item"><span class="orange-text">linkedin</span><span><a target="_blank" class="anchor-dark" href="https://www.linkedin.com/in/austin-gregersen-a4b77440/">%data%</a></span></li>';
+var HTMLangellist = '<li class="flex-item"><span class="orange-text">angel list</span><span><a target="_blank" class="anchor-dark" href="https://angel.co/austin-gregersen?public_profile=1">%data%</a></span></li>';
+var HTMLblog = '<li class="flex-item"><span class="orange-text">blog</span><span>%data%</span></li>';
+var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</span><span>%data%</span></li>';
 
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
-var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-column"></ul>';
-var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
+var HTMLskillsStart = '<h2 id="skills-h2">Biography</h2>';
+var HTMLsummary = '<p id="summary">%data%</p>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a target="_blank" href="%url%">%data%';
@@ -60,7 +52,7 @@ var googleMap = '<div id="map"></div>';
 
 
 /*
-The Internationalize Names challenge found in the lesson Flow Control from JavaScript Basics requires you to create a function that will need this helper code to run. Don't delete! It hooks up your code to the button you'll be appending.
+The next few lines were related to a quiz about an Internationalize Button in the lesson Flow Control
 */
 $(document).ready(function() {
   $('button').click(function() {
@@ -71,7 +63,7 @@ $(document).ready(function() {
 });
 
 /*
-The next few lines about clicks are for the Collecting Click Locations quiz in the lesson Flow Control from JavaScript Basics.
+The next few lines about clicks were for a Click Locations quiz in the lesson Flow Control
 */
 var clickLocations = [];
 
@@ -86,22 +78,13 @@ function logClicks(x,y) {
 }
 
 $(document).click(function(loc) {
-  // your code goes here!
+
 });
 
 
-
-/*
-This is the fun part. Here's where we generate the custom Google Map for the website.
-See the documentation below for more details.
-https://developers.google.com/maps/documentation/javascript/reference
-*/
-var map;    // declares a global map variable
+var map;
 
 
-/*
-Start here! initializeMap() is called when page is loaded.
-*/
 function initializeMap() {
 
   var locations;
@@ -130,17 +113,13 @@ function initializeMap() {
     locations.push(bio.contacts.location);
 
     // iterates through school locations and appends each location to
-    // the locations array. Note that forEach is used for array iteration
-    // as described in the Udacity FEND Style Guide:
-    // https://udacity.github.io/frontend-nanodegree-styleguide/javascript.html#for-in-loop
+    // the locations array.
     education.schools.forEach(function(school){
       locations.push(school.location);
     });
 
     // iterates through work locations and appends each location to
-    // the locations array. Note that forEach is used for array iteration
-    // as described in the Udacity FEND Style Guide:
-    // https://udacity.github.io/frontend-nanodegree-styleguide/javascript.html#for-in-loop
+    // the locations array.
     work.jobs.forEach(function(job){
       locations.push(job.location);
     });
@@ -150,34 +129,28 @@ function initializeMap() {
 
   /*
   createMapMarker(placeData) reads Google Places search results to create map pins.
-  placeData is the object returned from search results containing information
-  about a single location.
   */
   function createMapMarker(placeData) {
 
-    // The next lines save location data from the search result object to local variables
+    // Saves location data from the search result object to local variables
     var lat = placeData.geometry.location.lat();  // latitude from the place service
     var lon = placeData.geometry.location.lng();  // longitude from the place service
     var name = placeData.formatted_address;   // name of the place from the place service
     var bounds = window.mapBounds;            // current boundaries of the map window
 
-    // marker is an object with additional data about the pin for a single location
+
     var marker = new google.maps.Marker({
       map: map,
       position: placeData.geometry.location,
       title: name
     });
 
-    // infoWindows are the little helper windows that open when you click
-    // or hover over a pin on a map. They usually contain more information
-    // about a location.
     var infoWindow = new google.maps.InfoWindow({
       content: name
     });
 
-    // hmmmm, I wonder what this is about...
+
     google.maps.event.addListener(marker, 'click', function() {
-      // your code goes here!
       infoWindow.open(map, marker);
 
     });
@@ -235,10 +208,6 @@ function initializeMap() {
   pinPoster(locations);
 
 }
-
-/*
-Uncomment the code below when you're ready to implement a Google Map!
-*/
 
 // Calls the initializeMap() function when the page loads
 window.addEventListener('load', initializeMap);

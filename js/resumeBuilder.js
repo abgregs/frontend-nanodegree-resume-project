@@ -3,14 +3,16 @@ var bio = {
     "role": "Web Developer and Marketer",
     "contacts": {
         "mobile": "555-555-5555",
-        "email": "austin@example.com",
-        "twitter": "@JohnDoe",
-        "github": "abgregs",
+        "email": "abgregs@gmail.com",
+        "instagram": "@austin.gregersen",
+        "github": "/abgregs",
+        "angellist": "/austin-gregersen",
+        "linkedin": "/austin-gregersen-a4b77440/",
         "location": "Denver"
     },
     "welcomeMessage": "Welcome to my online resume.",
     "skillsStart": "Skills at a Glance",
-    "skills": ["web development", "medical devices", "analytics", "digital marketing"],
+    "summary": "Collaborative partner with experience creatively solving business challenges to meet or exceed challenging revenue goals and performance measures in both start-ups and large organizations. Analytically driven thinker complemented with excellent communication and interpersonal skills. Drawn to solving interesting and complex problems. Detail-oriented. Works well in small team environments. Currently pursuing a Front-End Web Development Nanodegree at Udacity.",
     "biopic": "images/austin.jpg"
 };
 
@@ -44,7 +46,7 @@ var work = {
             "title": "Product Manager Cell Processing",
             "location": "Lakewood, CO",
             "dates": "March 2013 - Present",
-            "description": "Works closely with the sales organization and marketing managers to successfully identify business opportunities, support tools, and new marketing programs in a timely and high quality manner. Evaluates communication and documentation programs and support tools for effectiveness through customer and sales force feedback as well as objective research. Maintains a close working relationship with various departments of the company to develop a fluid exchange of planning, forecasting, and marketing information with other functions.",
+            "description": "Significantly extended my role to perform multiple duties as digital marketing manager, spearheading and implementing new digital marketing programs to dramatically increase prospects and lead generation activity.  Planned and executed interactive speaking events with KOL participation, including a series of webinar programs targeted to multiple specific languages and geographies in key growth markets in Asia. Drove the first and only implementation of a marketing automation solution for the company. Defined workflows for lead generation and lead management utilizing Eloqua and SFDC. Created assets, managed lists, and deployed new campaigns in Eloqua on a weekly basis. Established global communication strategies and launched new websites for multiple business segments. Responsible for hiring, training, and managing a digital marketing specialist role.",
             "url": "https://www.terumobct.com"
         },
         {
@@ -60,30 +62,39 @@ var work = {
 
 var projects = {
     "projects": [{
-            "title": "Udacity Portfolio Website",
-            "dates": "2016",
-            "description": "The goal of this project was to build a simple online portfolio and to demonstrate an understanding of responsive design using Bootstrap framework. The project covered some of the following topics: HTML5 semantic tags, Bootstrap/grid-based layout, CSS media queries, responsive images.",
-            "url": "https://abgregs.github.io/frontend-nanodegree-portfolio-project/",
-            "images": ["images/udacity-portfolio-project.PNG"]
+          "title": "Clinical Trial Data Visualization",
+          "dates": "2014",
+          "description": "I taught myself how to use D3.js to build a basic model for an interactive clinical trial data visualization project, focusing on trends for key cell types that have attracted investment in the cell therapy industry. The visualization provides a comprehensive view of cell therapy clinical trials and the ability to sort the trials based on information collected from the trial description on the clinicaltrials.gov website.",
+          "url": "https://www.terumobct.com/Pages/Cell%20Therapy%20Technologies/Clinical-Trial-Data-Visualization/MSC-IF.html",
+          "images": ["images/clinical-trial-viz-tool.PNG"]
         },
         {
-            "title": "Clinical Trial Data Visualization",
-            "dates": "2014",
-            "description": "This project started out of the need for easier ways to sort and view cell therapy clinical trial data. Each bubble represents a clinical trial listed on clinicaltrials.gov. Hovering over the bubble provides important information about that trial. If you click the bubble you are directed to the clinicaltrials.gov website to view a detailed description of the trial. I developed the concept for this project and designed an early version of the tool, then collaborated with a web developers to complete the project.",
-            "url": "https://www.terumobct.com/Pages/Cell%20Therapy%20Technologies/Clinical-Trial-Data-Visualization/MSC-IF.html",
-            "images": ["images/clinical-trial-viz-tool.PNG"]
+          "title": "Harvest Technologies Website",
+          "dates": "2016",
+          "description": "Directed a team of more than 10 people, leveraging expertise from various cross-functional partners including sales, marketing, regulatory affairs, and clinical specialists to define and execute the strategy for rapidly launching the website. Redefined value proposition, developed all content and messaging, and led global communication strategy. Created our first and only content intended for patients, including a highly successful Find a Doctor program. Integrated marketing automation workflows and identified new opportunities for generating prospects.",
+          "url": "https://www.harvesttech.com/",
+          "images": ["images/harvest-website-project.png"]
+
         },
         {
-            "title": "Udacity Arcade Game Project",
-            "dates": "2017",
-            "description": 'In this project I created a frogger-like arcade game using HTML5 canvas and object-oriented javascript principles. The lessons emphasized in this project include: scope and variable access, the "this" parameter, functional classes, prototypical classes, superclass and subclasses, HTML5 canvas. The game required creating classes and prototype functions for different elements of the game, namely the player and the enemies. Functions were created to ensure the enemies move in a natural way across the screen and that collisions between the enemies and the player happen logically. The project included writing a README file. Beyond meeting the requirements for the project, a gem class was implemented and a scoreboard was also added to the game.',
-            "url": "https://abgregs.github.io/frontend-nanodegree-arcade-game-project/",
-            "images": ["images/udacity-arcade-game-project.PNG"]
+          "title": "Udacity Portfolio Website",
+          "dates": "2016",
+          "description": "The goal of this project was to build a simple online portfolio and to demonstrate an understanding of responsive design using Bootstrap framework. The project covered some of the following topics: HTML5 semantic tags, Bootstrap/grid-based layout, CSS media queries, responsive images.",
+          "url": "https://abgregs.github.io/frontend-nanodegree-portfolio-project/",
+          "images": ["images/udacity-portfolio-project.PNG"]
+
+        },
+        {
+          "title": "Udacity Arcade Game Project",
+          "dates": "2017",
+          "description": 'In this project I created a frogger-like arcade game using HTML5 canvas and object-oriented javascript principles. The lessons emphasized in this project include: scope and variable access, the "this" parameter, functional classes, prototypical classes, superclass and subclasses, HTML5 canvas. The game required creating classes and prototype functions for different elements of the game, namely the player and the enemies. Functions were created to ensure the enemies move in a natural way across the screen and that collisions between the enemies and the player happen logically. The project included writing a README file. Beyond meeting the requirements for the project, a gem class was implemented and a scoreboard was also added to the game.',
+          "url": "https://abgregs.github.io/frontend-nanodegree-arcade-game-project/",
+          "images": ["images/udacity-arcade-game-project.PNG"]
         }
     ]
 };
 
-//track clicks
+// Track clicks
 
 $(document).click(function(loc) {
     var x = loc.pageX;
@@ -93,20 +104,7 @@ $(document).click(function(loc) {
 
 });
 
-
-//internationalizeButton
-
-// function inName(name) {
-//   name = name.trim().split(" ");
-//   name[1] = name[1].toUpperCase();
-//   name[0] = name[0].slice(0,1).toUpperCase() + name[0].slice(1).toLowerCase();
-//   return name[0] + " " + name[1];
-//
-// }
-//
-// $("#main").append(internationalizeButton);
-
-//bio
+// Displays the bio data stored above by replacing the placeholders in helper.js
 
 bio.display = function() {
 
@@ -114,29 +112,28 @@ bio.display = function() {
     var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
     var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
     var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-    var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+    var formattedInstagram = HTMLinstagram.replace("%data%", bio.contacts.instagram);
     var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+    var formattedLinkedIn = HTMLlinkedin.replace("%data%", bio.contacts.linkedin);
+    var formattedAngelList = HTMLangellist.replace("%data%", bio.contacts.angellist);
     var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
     var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
     var formattedSkillsStart = HTMLskillsStart.replace("%data%", bio.skillsStart);
     var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
+    var formattedSummary = HTMLsummary.replace("%data%", bio.summary);
 
     $("#header").prepend(formattedRole);
     $("#header").prepend(formattedName);
-    $("#header").append(formattedBioPic, formattedWelcomeMessage, formattedSkillsStart);
+    $("#header").append(formattedSkillsStart, formattedSummary);
 
-    $("#topContacts, #footerContacts").append(formattedMobile, formattedEmail, formattedTwitter, formattedGithub, formattedLocation);
+    $("#topContacts, #footerContacts").append(formattedEmail, formattedLinkedIn, formattedAngelList, formattedInstagram, formattedGithub, formattedLocation);
 
-    for (var i = 0; i < bio.skills.length; i++) {
-        var formattedSkills = HTMLskills.replace("%data%", bio.skills[i]);
-        $("#skills").append(formattedSkills);
-    }
 };
 
 
 bio.display();
 
-//education
+// Displays the education data stored above by replacing the placeholders in helper.js
 
 education.display = function() {
 
@@ -178,7 +175,7 @@ education.display = function() {
 education.display();
 
 
-//work
+// Displays the work data stored above by replacing the placeholders in helper.js
 
 work.display = function() {
 
@@ -200,7 +197,7 @@ work.display = function() {
 
 work.display();
 
-//projects
+// Displays the poroject data stored above by replacing the placeholders in helper.js
 
 projects.display = function() {
 
@@ -223,6 +220,6 @@ projects.display = function() {
 
 projects.display();
 
-//add Google map
+// Add Google map
 
 $("#mapDiv").append(googleMap);
