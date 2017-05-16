@@ -4,7 +4,6 @@ var bio = {
     "contacts": {
         "mobile": "555-555-5555",
         "email": "abgregs@gmail.com",
-        "instagram": "@austin.gregersen",
         "github": "/abgregs",
         "angellist": "/austin-gregersen",
         "linkedin": "/austin-gregersen-a4b77440/",
@@ -112,7 +111,6 @@ bio.display = function() {
     var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
     var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
     var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-    var formattedInstagram = HTMLinstagram.replace("%data%", bio.contacts.instagram);
     var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
     var formattedLinkedIn = HTMLlinkedin.replace("%data%", bio.contacts.linkedin);
     var formattedAngelList = HTMLangellist.replace("%data%", bio.contacts.angellist);
@@ -126,7 +124,7 @@ bio.display = function() {
     $("#header").prepend(formattedName);
     $("#header").append(formattedSkillsStart, formattedSummary);
 
-    $("#topContacts, #footerContacts").append(formattedEmail, formattedLinkedIn, formattedAngelList, formattedInstagram, formattedGithub, formattedLocation);
+    $("#topContacts, #footerContacts").append(formattedEmail, formattedGithub, formattedAngelList, formattedLinkedIn, formattedLocation);
 
 };
 
