@@ -14,9 +14,9 @@ h6 {
   font-family: 'play', serif;
 }
 
-.clear-fix {
+/*.clear-fix {
   overflow: auto;
-}
+}*/
 
 .education-entry,
 .work-entry,
@@ -158,7 +158,7 @@ a {
 
 /* TODO: Replace with image later */
 #header {
-background-image: url("../images/rmnp-winter-sunrise2.jpg");
+background-color: #969696;
 max-width: 1400px;
 padding-bottom:5%;
 background-repeat: no-repeat;
@@ -250,7 +250,7 @@ span {
 }
 
 #mapDiv {
-  height: 400px;
+  /*height: 400px;*/
   width: 100%;
   padding-bottom: 5%;
 }

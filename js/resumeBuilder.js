@@ -61,6 +61,13 @@ var work = {
 
 var projects = {
     "projects": [{
+          "title": 'Udacity Neighborhood Map',
+          "dates": "2017",
+          "description": "In this project I used the Google Maps JavaScript API to create a map of my neighborhood, trigger Google places search requests for areas of interest, and dynamically display them on the map. The map shows places for food and drink in and around the Cap Hill neighborhood in Denver. The categories for the places are listed at the top of the app and, when clicked, will show or hide the the places marked on the map and places listed on the left-hand side that belong to that category. The map also includes a live search feature that filters places to display based on matching the text input of the search, updating with each key stroke of the text entered.",
+          "url": "https://abgregs.github.io/frontend-nanodegree-neighborhood-map-project/",
+          "images": ["images/neighborhood-map-project.PNG"]
+        },
+        {
           "title": "Clinical Trial Data Visualization",
           "dates": "2014",
           "description": "I taught myself how to use D3.js to build a basic model for an interactive clinical trial data visualization project, focusing on trends for key cell types that have attracted investment in the cell therapy industry. The visualization provides a comprehensive view of cell therapy clinical trials and the ability to sort the trials based on information collected from the trial description on the clinicaltrials.gov website.",
