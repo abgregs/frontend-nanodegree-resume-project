@@ -10,8 +10,10 @@ var bio = {
         "location": "Denver"
     },
     "welcomeMessage": "Welcome to my online resume.",
+    "bioHeader": "Biography",
     "skillsStart": "Skills at a Glance",
-    "summary": "Collaborative partner with experience creatively solving business challenges to meet or exceed challenging revenue goals and performance measures in both start-ups and large organizations. Analytically driven thinker complemented with excellent communication and interpersonal skills. Drawn to solving interesting and complex problems. Detail-oriented. Works well in small team environments. Currently pursuing a Front-End Web Development Nanodegree at Udacity.",
+    "skills": "Front-End Web Development, Javascript, CSS, HTML, Eloqua, Marketo, SFDC, Photoshop, Google Analytics, Google AdWords, Value Proposition and Messaging, Digtial Marketing Strategy, Strategic and Conceptual Selling, Long-Term Strategic Business Planning",
+    "summary": "Collaborative partner with experience creatively solving business challenges to meet or exceed challenging revenue goals and performance measures in both start-ups and large organizations. Analytically driven thinker complemented with excellent communication and interpersonal skills.",
     "biopic": "images/austin.jpg"
 };
 
@@ -45,7 +47,7 @@ var work = {
             "title": "Product Manager Cell Processing",
             "location": "Lakewood, CO",
             "dates": "March 2013 - Present",
-            "description": "Significantly extended my role to perform multiple duties as digital marketing manager, spearheading and implementing new digital marketing programs to dramatically increase prospects and lead generation activity.  Planned and executed interactive speaking events with KOL participation, including a series of webinar programs targeted to multiple specific languages and geographies in key growth markets in Asia. Drove the first and only implementation of a marketing automation solution for the company. Defined workflows for lead generation and lead management utilizing Eloqua and SFDC. Created assets, managed lists, and deployed new campaigns in Eloqua on a weekly basis. Established global communication strategies and launched new websites for multiple business segments. Responsible for hiring, training, and managing a digital marketing specialist role.",
+            "description": "Led the launch of two websites and global communication strategy for several products in both the point of care cell processing and regenerative medicine markets. Achieved over 100% YoY sales growth and over 350% increase in prospects generated online. Developed and implemented a marketing automation solution to track digital behavior, generate prospects, program email campaigns, and distribute and manage leads. Responsible for hiring, training, and managing a digital marketing specialist role.",
             "url": "https://www.terumobct.com"
         },
         {
@@ -53,7 +55,7 @@ var work = {
             "title": "PR Coordinator",
             "location": "Phoenix, AZ",
             "dates": "December 2011 - March 2013",
-            "description": "Consistently achieved difficult performance measures in a competitive, fast-paced start-up environment. Rapidly learned new skills and technologies related to SEO and content marketing and used them to identify, build and manage strategic partnerships with publishers. Used our iRank research, relationship management, and analytics platform to develop relationships with high-quality relevant publishers and identify key data points.",
+            "description": "Developed content marketing and SEO strategies for Fortune 1000 companies as well as small businesses. Built and managed relationships with various online publishers to coordinate development and placement of articles, infographics, and other content. Received specific praise for having a keen business acumen, attention to detail, and ability to learn and synthesize new information quickly.",
             "url": "https://www.iacquire.com"
         }
     ]
@@ -63,7 +65,7 @@ var projects = {
     "projects": [{
           "title": 'Udacity Neighborhood Map',
           "dates": "2017",
-          "description": "In this project I used the Google Maps JavaScript API to create a map of my neighborhood, trigger Google places search requests for areas of interest, and dynamically display them on the map. The map shows places for food and drink in and around the Cap Hill neighborhood in Denver. The categories for the places are listed at the top of the app and, when clicked, will show or hide the the places marked on the map and places listed on the left-hand side that belong to that category. The map also includes a live search feature that filters places to display based on matching the text input of the search, updating with each key stroke of the text entered.",
+          "description": "Used the Google Maps Javascript API and Foursquare API to create a neighborhood map providing information about local areas of interest. Implemented declarative bindings and automatic UI refresh with Knockout JS, and created a live search that filters on both text input and category selection.",
           "url": "https://abgregs.github.io/frontend-nanodegree-neighborhood-map-project/",
           "images": ["images/neighborhood-map-project.PNG"]
         },
@@ -83,9 +85,9 @@ var projects = {
 
         },
         {
-          "title": "Udacity Portfolio Website",
+          "title": "Udacity Sample Portfolio Website",
           "dates": "2016",
-          "description": "The goal of this project was to build a simple online portfolio and to demonstrate an understanding of responsive design using Bootstrap framework. The project covered some of the following topics: HTML5 semantic tags, Bootstrap/grid-based layout, CSS media queries, responsive images.",
+          "description": "The goal of this project was to build a sample online portfolio and to demonstrate an understanding of responsive design using Bootstrap framework. The project covered some of the following topics: HTML5 semantic tags, Bootstrap/grid-based layout, CSS media queries, responsive images.",
           "url": "https://abgregs.github.io/frontend-nanodegree-portfolio-project/",
           "images": ["images/udacity-portfolio-project.PNG"]
 
@@ -93,7 +95,7 @@ var projects = {
         {
           "title": "Udacity Arcade Game Project",
           "dates": "2017",
-          "description": 'In this project I created a frogger-like arcade game using HTML5 canvas and object-oriented javascript principles. The lessons emphasized in this project include: scope and variable access, the "this" parameter, functional classes, prototypical classes, superclass and subclasses, HTML5 canvas. The game required creating classes and prototype functions for different elements of the game, namely the player and the enemies. Functions were created to ensure the enemies move in a natural way across the screen and that collisions between the enemies and the player happen logically. The project included writing a README file. Beyond meeting the requirements for the project, a gem class was implemented and a scoreboard was also added to the game.',
+          "description": 'In this project I created a frogger-like arcade game using HTML5 canvas and object-oriented javascript principles. The lessons emphasized in this project included: scope and variable access, the "this" parameter, functional classes, prototypical classes, superclass and subclasses, HTML5 canvas. Functions were created to ensure the enemies move in a natural way across the screen and that collisions between the enemies and the player happen logically. Beyond meeting the requirements for the project, a gem class was implemented and a scoreboard was also added to the game.',
           "url": "https://abgregs.github.io/frontend-nanodegree-arcade-game-project/",
           "images": ["images/udacity-arcade-game-project.PNG"]
         }
@@ -123,13 +125,16 @@ bio.display = function() {
     var formattedAngelList = HTMLangellist.replace("%data%", bio.contacts.angellist);
     var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
     var formattedWelcomeMessage = HTMLwelcomeMsg.replace("%data%", bio.welcomeMessage);
-    var formattedSkillsStart = HTMLskillsStart.replace("%data%", bio.skillsStart);
+    var formattedBioHeader = HTMLbioHeader.replace("%data%", bio.bioHeader);
     var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
     var formattedSummary = HTMLsummary.replace("%data%", bio.summary);
+    var formattedSkillsStart = HTMLskillsStart.replace("%data%", bio.skillsStart);
+    var formattedSkills = HTMLskills.replace("%data%", bio.skills);
 
     $("#header").prepend(formattedRole);
     $("#header").prepend(formattedName);
-    $("#header").append(formattedSkillsStart, formattedSummary);
+    $("#header").append(formattedBioHeader, formattedSummary);
+    $("#header").append(formattedSkillsStart, formattedSkills);
 
     $("#topContacts, #footerContacts").append(formattedEmail, formattedGithub, formattedAngelList, formattedLinkedIn, formattedLocation);
 

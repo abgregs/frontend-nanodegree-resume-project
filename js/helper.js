@@ -18,7 +18,10 @@ var HTMLlocation = '<li class="flex-item"><span class="orange-text">location</sp
 var HTMLbioPic = '<img src="%data%" class="biopic">';
 var HTMLwelcomeMsg = '<span class="welcome-message">%data%</span>';
 
-var HTMLskillsStart = '<h2 id="skills-h2">Biography</h2>';
+var HTMLskillsStart = '<h2 id="skills-h2">%data%</h2>';
+var HTMLskills = '<p id="skills">%data%</p>';
+
+var HTMLbioHeader = '<h2 id="bio-h2">%data%</h2>';
 var HTMLsummary = '<p id="summary">%data%</p>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
