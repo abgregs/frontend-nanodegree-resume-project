@@ -35,7 +35,7 @@ var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<a target="_blank" href="%url%">%data%</a>';
 var HTMLprojectDates = '<div class="date-text">%data%</div></div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
-var HTMLprojectImage = '<img src="%data%">';
+var HTMLprojectImage = '<a target="_blank" href="%url%"><img src="%data%"></a>';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a target="_blank" href="%url%">%data%</a>';

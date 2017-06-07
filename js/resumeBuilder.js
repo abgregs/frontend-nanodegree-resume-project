@@ -212,16 +212,17 @@ work.display();
 projects.display = function() {
 
     projects.projects.forEach(function(project) {
-        var formattedprojectTitle = HTMLprojectTitle.replace("%data%", project.title);
+        var formattedprojectTitle = HTMLprojectTitle.replace("%data%", project.title).replace("%url%", project.url);
         var formattedprojectDates = HTMLprojectDates.replace("%data%", project.dates);
         var formattedprojectDescription = HTMLprojectDescription.replace("%data%", project.description);
-        formattedprojectTitle = formattedprojectTitle.replace("%url%", project.url);
+
 
         $("#projects").append(HTMLprojectStart);
         $(".project-entry:last").append(formattedprojectTitle, formattedprojectDates, formattedprojectDescription);
 
         project.images.forEach(function(image) {
-            var formattedprojectImage = HTMLprojectImage.replace("%data%", image);
+
+            var formattedprojectImage = HTMLprojectImage.replace("%data%", image).replace("%url%", project.url);
             $(".project-entry:last").append(formattedprojectImage);
 
         });
