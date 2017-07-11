@@ -65,14 +65,21 @@ var projects = {
     "projects": [{
           "title": 'Udacity Neighborhood Map',
           "dates": "2017",
-          "description": "Used the Google Maps Javascript API and Foursquare API to create a neighborhood map providing information about local areas of interest. Implemented declarative bindings and automatic UI refresh with Knockout JS, and created a live search that filters on both text input and category selection.",
+          "description": "Used the Google Maps Javascript API and Foursquare API to create a neighborhood map providing information about local areas of interest. Implemented declarative bindings and automatic UI refresh using Knockout JS. Added a live search that filters on both text input and category selection, updating both the map markers and the list of places based on various user input.",
           "url": "https://abgregs.github.io/frontend-nanodegree-neighborhood-map-project/",
           "images": ["images/neighborhood-map-project.PNG"]
         },
         {
+          "title": "GitHub Battle App",
+          "dates": "2017",
+          "description": "Learned the fundamentals of React by creating a GitHub Battle app. The purpose and main benefits of React (namely managing state throughout your application) were emphasized in building out the various components of this app. This project familiarized me with the React Ecosystem and associated tools including: React Router, Webpack, Babel, Axios, NPM. Some topics covered when building this project included: dataflow with props, function composition in React, nesting components, life cycle events, forms and encapsulation, dynamic rendering and query parameters. This project also familiarized me with building for production and setting up hosting with Firebase. The app itself fetches profile and repo information from the GitHub API to either display a grid of the most popular repos in a selected language or to compare the ranking of any two GitHub users based on number of stars and followers.",
+          "url": "https://github-battle-cff2f.firebaseapp.com/",
+          "images": ["images/github-battle-project.PNG"]
+        },
+        {
           "title": "Clinical Trial Data Visualization",
           "dates": "2014",
-          "description": "I taught myself how to use D3.js to build a basic model for an interactive clinical trial data visualization project, focusing on trends for key cell types that have attracted investment in the cell therapy industry. The visualization provides a comprehensive view of cell therapy clinical trials and the ability to sort the trials based on information collected from the trial description on the clinicaltrials.gov website.",
+          "description": "Taught myself how to use D3.js to build a basic model for an interactive clinical trial data visualization project, focusing on trends for key cell types that have attracted investment in the cell therapy industry. The visualization provides a comprehensive view of cell therapy clinical trials and the ability to sort the trials based on information collected from the trial description on the clinicaltrials.gov website.",
           "url": "https://www.terumobct.com/Pages/Cell%20Therapy%20Technologies/Clinical-Trial-Data-Visualization/MSC-IF.html",
           "images": ["images/clinical-trial-viz-tool.PNG"]
         },
@@ -95,7 +102,7 @@ var projects = {
         {
           "title": "Udacity Arcade Game Project",
           "dates": "2017",
-          "description": 'In this project I created a frogger-like arcade game using HTML5 canvas and object-oriented javascript principles. The lessons emphasized in this project included: scope and variable access, the "this" parameter, functional classes, prototypical classes, superclass and subclasses, HTML5 canvas. Functions were created to ensure the enemies move in a natural way across the screen and that collisions between the enemies and the player happen logically. Beyond meeting the requirements for the project, a gem class was implemented and a scoreboard was also added to the game.',
+          "description": 'Created a frogger-like arcade game using HTML5 canvas and object-oriented javascript principles. Created functions to ensure the enemies move in a natural way across the screen and that collisions between the enemies and the player happen logically. Beyond meeting the requirements for the project, a gem class was implemented and a scoreboard was also added to the game. The lessons emphasized in this project included: scope and variable access, the "this" parameter, functional classes, prototypical classes, superclass and subclasses, HTML5 canvas.',
           "url": "https://abgregs.github.io/frontend-nanodegree-arcade-game-project/",
           "images": ["images/udacity-arcade-game-project.PNG"]
         }
