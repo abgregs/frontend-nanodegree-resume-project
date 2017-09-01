@@ -12,7 +12,7 @@ var bio = {
     "welcomeMessage": "Welcome to my online resume.",
     "bioHeader": "Biography",
     "skillsStart": "Skills at a Glance",
-    "skills": "Front-End Web Development, Javascript, CSS, HTML, Eloqua, Marketo, SFDC, Photoshop, Google Analytics, Google AdWords, Value Proposition and Messaging, Digital Marketing Strategy, Strategic and Conceptual Selling, Long-Term Strategic Business Planning",
+    "skills": "Front-End Web Development, Javascript, CSS, SASS/SCSS, HTML, React JS, Eloqua, Marketo, SFDC, Photoshop, Google Analytics, Google AdWords, Value Proposition and Messaging, Digital Marketing Strategy, Long-Term Strategic Business Planning",
     "summary": "Collaborative partner with experience creatively solving business challenges to meet or exceed challenging revenue goals and performance measures in both start-ups and large organizations. Analytically driven thinker complemented with excellent communication and interpersonal skills.",
     "biopic": "images/austin.jpg"
 };
@@ -46,7 +46,7 @@ var work = {
             "employer": "Terumo BCT",
             "title": "Product Manager Cell Processing",
             "location": "Lakewood, CO",
-            "dates": "March 2013 - Present",
+            "dates": "March 2013 - May 2017",
             "description": "Led the launch of two websites and global communication strategy for several products in both the point of care cell processing and regenerative medicine markets. Achieved over 100% YoY sales growth and over 350% increase in prospects generated online. Developed and implemented a marketing automation solution to track digital behavior, generate prospects, program email campaigns, and distribute and manage leads. Responsible for hiring, training, and managing a digital marketing specialist role.",
             "url": "https://www.terumobct.com"
         },
