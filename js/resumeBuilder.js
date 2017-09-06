@@ -63,18 +63,25 @@ var work = {
 
 var projects = {
     "projects": [{
+          "title": "Luhu Design Website",
+          "dates": "2017",
+          "description": "Designed and built a website for a local mechanical engineering and design firm using React and Bootstrap. Composed functions in React to perform form validation, toggle classes, manage scroll position, handle click events and more to implement features such as a sticky navigation and a simple contact form. Gained more familiarity with the React ecosystem and associated tools including: React Router 4, Webpack, Babel, ES6, React Helmet, SASS/SCSS. Used nested routes and <i>props.match.params</i> to control routing for blog and services components. Composed a blog component that manages category tagging and updates when new posts/categories are added.",
+          "url": "https://luhu-design-project.firebaseapp.com/",
+          "images": ["images/luhu-design-project-screenshot.jpg"]
+        },
+        {
+          "title": "GitHub Battle App",
+          "dates": "2017",
+          "description": "Learned the fundamentals of React by creating a GitHub Battle app. The purpose and main benefits of React (namely managing state throughout your application) were emphasized in building out the various components of this app. This project familiarized me with the React ecosystem and associated tools including: React Router, Webpack, Babel, Axios, NPM. Some topics covered when building this project included: dataflow with props, function composition in React, nesting components, life cycle events, forms and encapsulation, dynamic rendering and query parameters. This project also familiarized me with building for production and setting up hosting with Firebase. The app itself fetches profile and repo information from the GitHub API to either display a grid of the most popular repos in a selected language or to compare the ranking of any two GitHub users based on number of stars and followers.",
+          "url": "https://github-battle-cff2f.firebaseapp.com/",
+          "images": ["images/github-battle-project.PNG"]
+        },
+        {
           "title": 'Udacity Neighborhood Map',
           "dates": "2017",
           "description": "Used the Google Maps Javascript API and Foursquare API to create a neighborhood map providing information about local areas of interest. Implemented declarative bindings and automatic UI refresh using Knockout JS. Added a live search that filters on both text input and category selection, updating both the map markers and the list of places based on various user input.",
           "url": "https://abgregs.github.io/frontend-nanodegree-neighborhood-map-project/",
           "images": ["images/neighborhood-map-project.PNG"]
-        },
-        {
-          "title": "GitHub Battle App",
-          "dates": "2017",
-          "description": "Learned the fundamentals of React by creating a GitHub Battle app. The purpose and main benefits of React (namely managing state throughout your application) were emphasized in building out the various components of this app. This project familiarized me with the React Ecosystem and associated tools including: React Router, Webpack, Babel, Axios, NPM. Some topics covered when building this project included: dataflow with props, function composition in React, nesting components, life cycle events, forms and encapsulation, dynamic rendering and query parameters. This project also familiarized me with building for production and setting up hosting with Firebase. The app itself fetches profile and repo information from the GitHub API to either display a grid of the most popular repos in a selected language or to compare the ranking of any two GitHub users based on number of stars and followers.",
-          "url": "https://github-battle-cff2f.firebaseapp.com/",
-          "images": ["images/github-battle-project.PNG"]
         },
         {
           "title": "Clinical Trial Data Visualization",
