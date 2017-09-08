@@ -29,7 +29,7 @@ var education = {
     "onlineCourses": [{
             "title": "Udacity Online Classes and Nanodegrees",
             "school": "Front-End Web Developer Nanodegree",
-            "dates": "2016",
+            "dates": "2017",
             "url": "https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001"
         },
         {
