@@ -12,7 +12,7 @@ var bio = {
     "welcomeMessage": "Welcome to my online resume.",
     "bioHeader": "Biography",
     "skillsStart": "Skills at a Glance",
-    "skills": "Front-End Web Development, Javascript, CSS, SASS/SCSS, HTML, React JS, Eloqua, Marketo, SFDC, Photoshop, Google Analytics, Google AdWords, Value Proposition and Messaging, Digital Marketing Strategy, Long-Term Strategic Business Planning",
+    "skills": "React JS, Redux, Javascript, CSS, SASS/SCSS, HTML, Eloqua, Marketo, SFDC, Photoshop, Google Analytics, Google AdWords, Value Proposition and Messaging, Digital Marketing Strategy, Long-Term Strategic Business Planning",
     "summary": "Collaborative partner with experience creatively solving business challenges to meet or exceed challenging revenue goals and performance measures in both start-ups and large organizations. Analytically driven thinker complemented with excellent communication and interpersonal skills.",
     "biopic": "images/austin.jpg"
 };
@@ -68,6 +68,13 @@ var projects = {
           "description": "Designed and built a website for a local mechanical engineering and design firm using React and Bootstrap. Composed functions in React to perform form validation, toggle classes, manage scroll position, handle click events and more to implement features such as a sticky navigation and a simple contact form. Gained more familiarity with the React ecosystem and associated tools including: React Router 4, Webpack, Babel, ES6, React Helmet, SASS/SCSS. Used nested routes and <i>props.match.params</i> to control routing for blog and services components. Composed a blog component that manages category tagging and updates when new posts/categories are added.",
           "url": "https://luhu-design-project.firebaseapp.com/",
           "images": ["images/luhu-design-project-screenshot.jpg"]
+        },
+        {
+          "title": "Duckr App",
+          "dates": "2017",
+          "description": "Created an app similar to Twitter built using Redux and React. This project covered several advanced topics in Redux and React using a real world example application. The Ducks Redux file structure was used to organize the actions/action creators and reducers pertaining to each property on our state. Redux Thunk middleware was used to control dispatching actions over the lifecycle of asynchronous events for fetching and handling things like users, likes, and replies in the various views of the app. Other topics covered include: user authentication with Facebook and Firebase, route protection, error handling, data structures, component based architecture and more.",
+          "url": "https://duckr-teapp.firebaseapp.com/",
+          "images": ["images/duckr-app.jpg"]
         },
         {
           "title": "GitHub Battle App",
