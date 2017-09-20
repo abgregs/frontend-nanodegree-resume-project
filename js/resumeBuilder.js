@@ -12,7 +12,7 @@ var bio = {
     "welcomeMessage": "Welcome to my online resume.",
     "bioHeader": "Biography",
     "skillsStart": "Skills at a Glance",
-    "skills": "React JS, Redux, Javascript, CSS, SASS/SCSS, HTML, Eloqua, Marketo, SFDC, Photoshop, Google Analytics, Google AdWords, Value Proposition and Messaging, Digital Marketing Strategy, Long-Term Strategic Business Planning",
+    "skills": "React JS, Redux, Javascript, CSS, SASS/SCSS, HTML, Firebase, GitHub, Google Maps Javascript API, Eloqua, Marketo, SFDC, Photoshop, Google Analytics, Value Proposition and Messaging, Digital Marketing Strategy, Long-Term Strategic Business Planning",
     "summary": "Collaborative partner with experience creatively solving business challenges to meet or exceed challenging revenue goals and performance measures in both start-ups and large organizations. Analytically driven thinker complemented with excellent communication and interpersonal skills.",
     "biopic": "images/austin.jpg"
 };
@@ -22,7 +22,7 @@ var education = {
         "name": "University of Arizona",
         "location": "Tucson, AZ",
         "degree": "BA",
-        "majors": ["East Asian Studies, Linguistics and Japanese Literature", "Mathematics"],
+        "majors": ["East Asian Studies, Linguistics and Japanese Literature"],
         "dates": "2009",
         "url": "http://www.arizona.edu"
     }, ],
