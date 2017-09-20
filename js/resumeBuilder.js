@@ -72,7 +72,7 @@ var projects = {
         {
           "title": "Duckr App",
           "dates": "2017",
-          "description": "Created an app similar to Twitter built using Redux and React. This project covered several advanced topics in Redux and React using a real world example application. The Ducks Redux file structure was used to organize the actions/action creators and reducers pertaining to each property on our state. Redux Thunk middleware was used to control dispatching actions over the lifecycle of asynchronous events for fetching and handling things like users, likes, and replies in the various views of the app. Other topics covered include: user authentication with Facebook and Firebase, route protection, error handling, data structures, component based architecture and more.",
+          "description": "Learned to create an app similar to Twitter built using Redux and React. This project covered several advanced topics in Redux and React using a real world example application. The Ducks Redux file structure was used to organize actions/action creators and reducers. Redux Thunk middleware was used to control dispatching actions over the lifecycle of asynchronous events for fetching and handling things like users, likes, and replies in the various views of the app. Other topics covered include: user authentication with Facebook and Firebase, route protection, error handling, data structures, component based architecture and more.",
           "url": "https://duckr-teapp.firebaseapp.com/",
           "images": ["images/duckr-app.jpg"]
         },
