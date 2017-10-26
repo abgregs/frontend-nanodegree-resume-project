@@ -12,8 +12,8 @@ var bio = {
     "welcomeMessage": "Welcome to my online resume.",
     "bioHeader": "Biography",
     "skillsStart": "Skills at a Glance",
-    "skills": "React JS, Redux, Javascript, CSS, SASS/SCSS, HTML, Firebase, GitHub, Google Maps Javascript API, Eloqua, Marketo, SFDC, Photoshop, Google Analytics, Value Proposition and Messaging, Digital Marketing Strategy, Long-Term Strategic Business Planning",
-    "summary": "Collaborative partner with experience creatively solving business challenges to meet or exceed challenging revenue goals and performance measures in both start-ups and large organizations. Analytically driven thinker complemented with excellent communication and interpersonal skills.",
+    "skills": "React JS, Redux, Javascript, CSS, SASS/SCSS, HTML, Firebase, Git, Google Maps Javascript API, Eloqua, Marketo, SFDC, Photoshop, Google Analytics, Value Proposition and Messaging, Digital Marketing Strategy, Long-Term Strategic Business Planning",
+    "summary": "Continuous learner and explorer of new technologies with a focus on advancing my skills as a web developer. Self-motivated problem solver with strong attention to detail and excellent communication skills. Knowledgeable in several Javascript libraries/frameworks and have built and deployed a variety of projects including a website for a local business.",
     "biopic": "images/austin.jpg"
 };
 
