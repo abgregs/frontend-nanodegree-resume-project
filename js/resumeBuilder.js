@@ -13,7 +13,7 @@ var bio = {
     "bioHeader": "Biography",
     "skillsStart": "Skills at a Glance",
     "skills": "React JS, Redux, Javascript, CSS, SASS/SCSS, HTML, Firebase, Git, Google Maps Javascript API, Eloqua, Marketo, SFDC, Photoshop, Google Analytics, Value Proposition and Messaging, Digital Marketing Strategy, Long-Term Strategic Business Planning",
-    "summary": "Continuous learner and explorer of new technologies with a focus on advancing my skills as a web developer. Self-motivated problem solver with strong attention to detail and excellent communication skills. Knowledgeable in several Javascript libraries/frameworks and have built and deployed a variety of projects including a website for a local business.",
+    "summary": "Avid learner with a focus on advancing my skills as a web developer. Self-motivated problem solver with strong attention to detail and excellent communication skills. Knowledgeable in several Javascript libraries/frameworks and have recently built and deployed a variety of projects. Capable of learning new skills and technologies quickly.",
     "biopic": "images/austin.jpg"
 };
 
